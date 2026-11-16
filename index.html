@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Home | CISCM</title>
     <meta name="description" content="Home — CISCM colorful website design concept.">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/theme.css">
 </head>
 
@@ -48,6 +51,94 @@
             </nav>
         </div>
     </header>
+    <main class="scm2-page">
+        <section class="scm2-hero">
+            <div class="scm2-orb scm2-orb--one"></div>
+            <div class="scm2-orb scm2-orb--two"></div>
+
+            <div class="scm2-showcase" id="scm2-services">
+                <article class="scm2-feature" aria-live="polite">
+                    <video class="scm2-feature__video" autoplay muted loop playsinline preload="auto">
+                        <source src="assets/videos/suply_chain_hero.mp4" type="video/mp4">
+                    </video>
+                    <div class="scm2-feature__fallback scm2-feature__fallback--warehouse"></div>
+                    <div class="scm2-feature__overlay"></div>
+
+
+                    <div class="swiper scm_hero_swiper">
+
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="scm2-feature__content">
+                                    <span class="scm2-feature__eyebrow" data-scm2-category>01 — PROFESSIONAL
+                                        STANDARDS</span>
+                                    <h2 data-scm2-title>Elevating <br> supply chain excellence.</h2>
+                                    <p data-scm2-description>Advancing professional competence, setting industry
+                                        standards and building the future of supply chain management.</p>
+                                    <a href="#contact" class="scm2-feature__button">Explore CISCM<span>↗</span></a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="scm2-feature__content">
+                                    <span class="scm2-feature__eyebrow" data-scm2-category>02 — PROFESSIONAL
+                                        DEVELOPMENT</span>
+                                    <h2 data-scm2-title>Competence <br> that moves industries.</h2>
+                                    <p data-scm2-description>Empowering supply chain professionals with globally
+                                        relevant standards, recognized credentials and practical expertise.</p>
+                                    <a href="#contact" class="scm2-feature__button">Explore Professional Credentials
+                                        <span>↗</span></a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="scm2-feature__content">
+                                    <span class="scm2-feature__eyebrow" data-scm2-category>03 — INDUSTRY
+                                        RECOGNITION</span>
+                                    <h2 data-scm2-title>Setting the standard <br> for supply chains.</h2>
+                                    <p data-scm2-description>Defining professional benchmarks, strengthening
+                                        institutional quality and advancing excellence across the supply chain
+                                        profession.</p>
+                                    <a href="#contact" class="scm2-feature__button">Discover Our Standards
+                                        <span>↗</span></a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="scm2-feature__content">
+                                    <span class="scm2-feature__eyebrow" data-scm2-category>04 — GLOBAL SUPPLY
+                                        CHAIN</span>
+                                    <h2 data-scm2-title>Building capability. <br> Driving performance.</h2>
+                                    <p data-scm2-description>Connecting professional knowledge with measurable
+                                        competence to create stronger, smarter and more resilient supply chains.</p>
+                                    <a href="#contact" class="scm2-feature__button">Discover CISCM <span>↗</span></a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="scm2-feature__content">
+                                    <span class="scm2-feature__eyebrow" data-scm2-category>05 — PROFESSIONAL
+                                        EXCELLENCE</span>
+                                    <h2 data-scm2-title>Where supply chain <br> professionals advance.</h2>
+                                    <p data-scm2-description>A professional framework for developing expertise,
+                                        demonstrating capability and earning recognition across the supply chain
+                                        discipline.</p>
+                                    <a href="#contact" class="scm2-feature__button">Find Your Pathway <span>↗</span></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="scm2-feature__progress"><span data-scm2-progress></span></div>
+
+                </article>
+            </div>
+
+        </section>
+    </main>
     <main id="main">
         <div class="home-hero">
             <div class="wrap home-grid">
@@ -248,7 +339,26 @@
                         href="accessibility.html">Accessibility</a><a href="sitemap.html">All pages</a></span></div>
         </div>
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Website JS -->
     <script src="assets/site.js"></script>
+    <script>
+        // swiper js
+        const heroScmSwiper = new Swiper('.scm_hero_swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                delay: 5000,
+            },
+            speed: 1000,
+            slidesPerView: 1
+
+
+        });
+    </script>
 </body>
 
 </html>
