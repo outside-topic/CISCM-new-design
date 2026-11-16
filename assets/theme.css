@@ -209,9 +209,17 @@ button {
 }
 
 .hero {
-    position: relative;
+    background-image:
+        radial-gradient(ellipse at 95% 15%, #278fc940, transparent 60%),
+        linear-gradient(115deg, #26356fb3, #503b91b3 60%, #245c84b3),
+        var(--hero-image);
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
     overflow: hidden;
-    background: linear-gradient(110deg, #f4f7f9, #fff 65%)
+    position: relative;
 }
 
 .hero-grid {
@@ -268,7 +276,7 @@ h1 em {
 .lead {
     font-size: 16px;
     line-height: 1.85;
-    color: var(--muted);
+    color: #ffffff;
     max-width: 520px;
     margin-bottom: 29px
 }
@@ -281,7 +289,7 @@ h1 em {
 
 .hero-note {
     font-size: 11px;
-    color: var(--muted);
+    color: #ffffff;
     margin: 22px 0 0;
     display: flex;
     align-items: center;
@@ -1314,7 +1322,8 @@ footer a:hover {
 }
 
 .accreditation-hero {
-    background: #f3f5f5;
+    background: radial-gradient(ellipse at 90% 10%, #218e9f70, transparent 60%), linear-gradient(115deg, #112f60, #373a84 65%, #205d80);
+
     position: relative;
     overflow: hidden
 }
@@ -2284,24 +2293,42 @@ body {
     color: #2368ae
 }
 
+
 .page-hero {
     --h1: #153d70;
     --h2: #4b4b91;
-    background: radial-gradient(ellipse at 92% 2%, #4bd4c62b, transparent 60%), linear-gradient(115deg, var(--h1), var(--h2));
+
+    background:
+        linear-gradient(115deg,
+            rgba(21, 61, 112, 0.88),
+            rgba(75, 75, 145, 0.85)),
+        var(--hero-image, none),
+        linear-gradient(115deg, var(--h1), var(--h2));
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     color: white;
     position: relative;
-    overflow: hidden
+    overflow: hidden;
 }
 
-.page-hero:after {
+.page-hero::after {
     content: '';
     height: 4px;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(90deg, #75d4bd, #7bafe8, #bb99db, #efc67c)
+
+    background: linear-gradient(90deg,
+            #75d4bd,
+            #7bafe8,
+            #bb99db,
+            #efc67c);
 }
+
 
 .page-hero-inner {
     display: grid;
@@ -3027,9 +3054,6 @@ body {
     border-left-color: #9361b1
 }
 
-.credentials-page .hero {
-    background: linear-gradient(120deg, #ecf6fa, #f0f0fd, #f7f4eb)
-}
 
 .credentials-page .card:nth-child(1) {
     background: #eef9f5
@@ -3044,7 +3068,16 @@ body {
 }
 
 .membership-page .membership-hero {
-    background: linear-gradient(115deg, #163c6b, #31447c, #176e7a)
+    background:
+        linear-gradient(115deg,
+            rgba(22, 60, 107, 0.90),
+            rgba(49, 68, 124, 0.70),
+            rgba(23, 110, 122, 0.70)),
+        url("https://images.unsplash.com/photo-1606964212858-c215029db704?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .membership-page .grade:nth-child(1) {

@@ -2588,7 +2588,7 @@ footer {
     background: radial-gradient(ellipse at 90% 10%, #218e9f70, transparent 60%), linear-gradient(115deg, #112f60, #373a84 65%, #205d80);
     color: white;
     overflow: hidden;
-    position: relative
+    position: relative;
 }
 
 .bok-hero .hero-grid {

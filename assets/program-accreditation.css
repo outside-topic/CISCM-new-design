@@ -2584,10 +2584,17 @@ footer {
 
 /* Program accreditation page */
 .program-hero {
-    background: radial-gradient(ellipse at 95% 15%, #278fc975, transparent 60%), linear-gradient(115deg, #26356f, #503b91 60%, #245c84);
-    color: white;
+    background-image:
+        radial-gradient(ellipse at 95% 15%, #278fc940, transparent 60%),
+        linear-gradient(115deg, #26356fb3, #503b91b3 60%, #245c84b3),
+        var(--hero-image);
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
     overflow: hidden;
-    position: relative
+    position: relative;
 }
 
 .program-hero .hero-grid {
